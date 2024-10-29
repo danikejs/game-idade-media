@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e68c;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4b0082;
+}
+
+#game-container {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    background-color: #ffe4b5;
+}
+
+#castle {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#resources {
+    margin: 20px 0;
+}
+
+#actions button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#actions button:hover {
+    background-color: #551a8b;
+}
+
+#question-container {
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d9534f;
+}

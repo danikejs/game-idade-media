@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defenda o castelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Defenda o Castelo!</h1>
+    <h4>Objetivo do jogo:</h4>
+        <li>Defenda o castelo 10 vezes</li><br>
+        <li>Dica:quanto mais guerreiro menos dano</li>
+    </h4>
+    <div id="game-container">
+        <div id="castle">
+            🏰 <span id="castle-health">100</span> Saúde
+        </div>
+        <div id="resources">
+            <p>Ouro: <span id="gold">100</span></p>
+            <p>Madeira: <span id="wood">100</span></p>
+            <p>Guerreiros: <span id="warriors">0</span></p>
+        </div>
+        <div id="actions">
+            <button onclick="recruitWarrior()">Recrutar Guerreiro (-20 Ouro)</button>
+            <button onclick="repairCastle()">Reparar Castelo (-30 Madeira)</button>
+            <button onclick="askQuestion()">Responder Pergunta para Ganhar Ouro</button>
+            <button onclick="collectWood()">Coletar Madeira</button>
+            <button onclick="enemyAttack()">Ataque do Inimigo</button>  
+        </div>
+        <div id="question-container" style="display:none;">
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Digite sua resposta">
+            <button onclick="checkAnswer()">Enviar Resposta</button>
+        </div>
+        <div id="victory-message" style="display:none;">
+            <h2 id="victory-message"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
